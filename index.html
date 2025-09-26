@@ -11,6 +11,30 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+  /* Customers Card Customization */
+  #customers .card {
+    background-color: #ffffff;      /* White background */
+    color: #000000;                 /* Black text */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Soft shadow around card */
+  }
+
+  #customers .card-body h5 {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* Slight drop shadow for text */
+  }
+
+  #customers .card-body p {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.15); /* Slight drop shadow for descriptions */
+  }
+
+  /* Optional: adjust logo spacing for light background */
+  #customers .card-body img {
+    background-color: #ffffff; /* Ensure logos don't inherit dark background */
+    padding: 5px;
+  }
+</style>
+
 </head>
 <body>
 
@@ -37,7 +61,7 @@
   <!-- Hero Section -->
   <header class="bg-secondary text-light text-center py-5 shadow">
     <div class="container">
-      <h1 class="display-4 fw-bold">Salzarulo Solutions Group</h1>
+      <h1 class="display-4 fw-bold">Michael Salzarulo</h1>
       <p class="lead">Consulting & Engineering in STEM, Defense, Intel, and Software Tools</p>
       <a href="#projects" class="btn btn-outline-light btn-lg mt-3">Explore Projects</a>
     </div>
