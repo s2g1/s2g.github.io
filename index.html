@@ -1,111 +1,128 @@
 <!DOCTYPE html>
-<html>
-	<header>
-		<title> S2G </title>
-		<meta Overview for Salzarulo Solutions Group>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- Link this to a readme: [![](https://data.jsdelivr.com/v1/package/npm/bootswatch/badge)](https://www.jsdelivr.com/package/npm/bootswatch)-->
-		<link href="https://raw.githubusercontent.com/thomaspark/bootswatch/v5/dist/vapor/bootstrap.css" rel="stylesheet">
-		<link href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/vapor/bootstrap.min.css" rel="stylesheet"></script>
-	</header>
-	<body>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Salzarulo Solutions Group (S2G) - Consulting and engineering development company specializing in STEM, defense, intel, and software tools.">
+  <title>S2G</title>
 
-        <h1 style="text-align: center;">Welcome to Salzarulo Solutions Group S2G</h1>
-        <p style="text-align: center;"> S2G is a consultation and engineering development company with domain specialization in stem education, defense, intel, and software tools. </p>
-        
-        
-        <div class="row">
-            <div class="col-lg-4">
-                <h2 class="card-header" style="text-align: center;">
-                    Past Projects
-                </h2>
-                <div class="text-center">
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link active" data-bs-toggle="tab" href="#Pro" aria-selected="true" role="tab">Software Tools</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" data-bs-toggle="tab" href="#Services" aria-selected="false" role="tab" tabindex="-1">Professional Services</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" data-bs-toggle="tab" href="#games" aria-selected="false" role="tab" tabindex="-1">Game Development</a>
-                        </li>
-                    </ul>
-                </div>
-                   
-        
-            <div id="myTabContent" class="tab-content text-center">
-                <div class="tab-pane fade active show" id="Pro" role="tabpanel">
-                    <p>Skynet</p>
-                    <p>Overpass</p>    
-                    <p>Bespin</p>
-                    <p>Plasma</p>
-                    <p>Data Slate</p>
-                    <p>CMPT-Generator</p>
-                    <p>Avro Deserializer</p>  
-                    <p>Smart Home Controller</p>
-                    <p>Pythonic Autonomous NIIRS Estimation PANE</p>
-                    <p>Weaklink.AI</p>
-                    <p>Carma autonomous driving stack</p>
-                </div>
-                <div class="tab-pane fade" id="Services" role="tabpanel">
-                    <P>IT Services</P>
-                    <P>SETA support</P>
-                    <P>Electromyography data aggregator</P>
-                    <P>I&Q wave Data acquisition system</P>
-                    <P>Canbus Data Acquisition System</P>
-                    <P>Semi-Active suspension system</P>
-                </div>
-                <div class="tab-pane fade" id="games" role="tabpanel">
-                    <P>Game Mode</P>    
-                    <P>Procedural Pac Man</P>
-                    <P>Tetris</P>
-                    <P>Cube Attack</P>
-                    <P>Table Top Tipper</P>
-                    <P>Oculus Environment Simulation</P>
-                </div>
+  <!-- Bootswatch Slate Theme -->
+  <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/slate/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">S2G</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#customers">Customers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#people">People</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-secondary text-light text-center py-5 shadow">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Salzarulo Solutions Group</h1>
+      <p class="lead">Consulting & Engineering in STEM, Defense, Intel, and Software Tools</p>
+      <a href="#projects" class="btn btn-outline-light btn-lg mt-3">Explore Projects</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <div class="row g-4">
+      
+      <!-- Projects -->
+      <div class="col-lg-4" id="projects">
+        <div class="card h-100 shadow">
+          <div class="card-header text-center fw-bold">Past Projects</div>
+          <div class="card-body">
+            <ul class="nav nav-tabs justify-content-center" id="projectTabs" role="tablist">
+              <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#tools" role="tab">Software Tools</a></li>
+              <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#services" role="tab">Services</a></li>
+              <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#games" role="tab">Games</a></li>
+            </ul>
+            <div class="tab-content mt-3">
+              <div class="tab-pane fade show active" id="tools" role="tabpanel">
+                <ul class="list-unstyled">
+                  <li>Skynet</li><li>Overpass</li><li>Bespin</li><li>Plasma</li>
+                  <li>Data Slate</li><li>CMPT-Generator</li><li>Avro Deserializer</li>
+                  <li>Smart Home Controller</li><li>Pythonic Autonomous NIIRS Estimation (PANE)</li>
+                  <li>Weaklink.AI</li><li>Carma autonomous driving stack</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="services" role="tabpanel">
+                <ul class="list-unstyled">
+                  <li>IT Services</li><li>SETA support</li><li>Electromyography data aggregator</li>
+                  <li>I&Q wave data acquisition system</li><li>Canbus data acquisition</li>
+                  <li>Semi-active suspension system</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="games" role="tabpanel">
+                <ul class="list-unstyled">
+                  <li>Game Mode</li><li>Procedural Pac Man</li><li>Tetris</li>
+                  <li>Cube Attack</li><li>Table Top Tipper</li><li>Oculus Simulation</li>
+                </ul>
+              </div>
             </div>
-            </div>        
-
-            <div class="col-lg-4">
-            <h2 class="card-header" style="text-align: center;">Customers</h2>
-            <img src="images/nro.png" alt="NRO logo" width="150" height="150">
-            <h3>Westfields</h3>
-            <img src="images/ussf.png" alt="USSF logo" width="150" height="150">
-            <h3>USSF</h3>
-            <img src="images/university-of-illinois-at-chicago.png" alt="UIC logo" width="150" height="150">
-            <h3>University of Illinois @ chicago</h3>
-            <img src="images/temple.png" alt="Temple University logo" width="150" height="150">
-            <h3>Temple University</h3>
-            <img src="images/drexel.png" alt="Drexel University logo" width="150" height="150">
-            <h3>Drexel University</h3>
-            <img src="images/chop.png" alt="Children's Hospital of Philadelphia logo" width="150" height="150">
-            <h3>Children's Hospital of Philadelphia</h3>
-            <img src="images/rpld.png" alt="Ruggiero Plante Land Design logo" width="150" height="150">
-            <h3>Ruggiero Plante Land Design</h3>
-            <img src="images/volpe.jpg" alt="Volpe Department of Transportation logo" width="150" height="150">
-            <h3>Volpe Transportation Center</h3>
-            <img src="images/ap.png" alt="NRO logo" width="150" height="150">
-            <h3>Civil Air Patrol</h3>
+          </div>
         </div>
+      </div>
 
-        <div class="col-lg-4">
-            <h2 class="card-header" style="text-align: center;">People</h2>
-            <figure class="text-center">
-                <h3 class="card-header" href="https://www.linkedin.com/in/mike-salzarulo-ocsmp-3a47b4b2/">Mike Salzarulo</h3>
-                <figcaption class="blockquote-footer">
-                    Founder
-                </figcaption>
-            </figure>
-
+      <!-- Customers -->
+      <div class="col-lg-4" id="customers">
+        <div class="card h-100 shadow">
+          <div class="card-header text-center fw-bold">Customers</div>
+          <div class="card-body text-center">
+            <img src="images/nro.png" alt="NRO logo" class="img-fluid my-2" width="120"><h5>NRO</h5>
+            <img src="images/ussf.png" alt="USSF logo" class="img-fluid my-2" width="120"><h5>USSF</h5>
+            <img src="images/university-of-illinois-at-chicago.png" alt="UIC logo" class="img-fluid my-2" width="120"><h5>University of Illinois at Chicago</h5>
+            <img src="images/temple.png" alt="Temple logo" class="img-fluid my-2" width="120"><h5>Temple University</h5>
+            <img src="images/drexel.png" alt="Drexel logo" class="img-fluid my-2" width="120"><h5>Drexel University</h5>
+            <img src="images/chop.png" alt="CHOP logo" class="img-fluid my-2" width="120"><h5>Children’s Hospital of Philadelphia</h5>
+            <img src="images/rpld.png" alt="RPLD logo" class="img-fluid my-2" width="120"><h5>Ruggiero Plante Land Design</h5>
+            <img src="images/volpe.jpg" alt="Volpe Transportation logo" class="img-fluid my-2" width="120"><h5>Volpe Transportation Center</h5>
+            <img src="images/ap.png" alt="Civil Air Patrol logo" class="img-fluid my-2" width="120"><h5>Civil Air Patrol</h5>
+          </div>
         </div>
-        <!-- end Row -->
+      </div>
+
+      <!-- People -->
+      <div class="col-lg-4" id="people">
+        <div class="card h-100 shadow">
+          <div class="card-header text-center fw-bold">People</div>
+          <div class="card-body text-center">
+            <a href="https://www.linkedin.com/in/mike-salzarulo-ocsmp-3a47b4b2/" class="text-decoration-none text-light">
+              <h4>Mike Salzarulo</h4>
+            </a>
+            <p class="text-muted">Founder</p>
+          </div>
         </div>
+      </div>
 
-	</body>
-<footer>
-</footer>
+    </div>
+  </main>
 
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-light py-4" id="contact">
+    <p class="mb-1">© 2025 Salzarulo Solutions Group (S2G)</p>
+    <p class="mb-0">Contact: <a href="mailto:contact@s2g.com" class="text-light">contact@s2g.com</a></p>
+  </footer>
+
+</body>
 </html>
